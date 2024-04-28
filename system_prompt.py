@@ -6,9 +6,11 @@ must identify which of the following three categories the object fits into.
 3. Landfill (all waste items that are not recyclable and not compostable)
 4. Other (items that do not fit into the above categories)
 
-Respond strictly with the format delimited by three backticks. Replace the sections of text
-enclosed in angle brackets with your response.:
-```
+Strictly use the following format. Replace the sections of text enclosed in angle brackets with your response.:
+
 Recyclable: <YES or NO>
-Material: <one of the above three categories>
-```"""
+Item: <what the item is>
+Trash Type: <one of the above three categories>
+Material: <what is the specific material of the item>
+
+"""
