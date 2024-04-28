@@ -57,7 +57,7 @@ async def send_image(file: UploadFile = File(...)):
             f.write(contents)
 
         gemini_response = ask_gemini(file_path, name_of_file)
-        print("Response from gemini:" + gemini_response)
+        print("Response from gemini:\n" + gemini_response)
         final_response = process_response(gemini_response)
 
         return final_response
