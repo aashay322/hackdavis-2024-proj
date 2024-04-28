@@ -49,7 +49,7 @@ async def send_image(file: UploadFile = File(...)):
     try: 
         os.makedirs('uploads', exist_ok=True)
         file_path = f"uploads/{file.filename}"
-        name_of_file = file.filename[:file.filename.find(".jpg")]
+        name_of_file = file.filename[:file.filename.find(".")]
         with open(file_path, "wb") as f: 
             contents = await file.read()
             f.write(contents)
