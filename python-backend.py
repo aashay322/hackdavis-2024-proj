@@ -4,7 +4,7 @@ import uvicorn
 
 from dotenv import load_dotenv
 import google.generativeai as genai
-from system_prompt import sys_prompt
+from gemini.system_prompt import sys_prompt
 
 import requests 
 import os 
